@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarting Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header id="navbar">
+        <nav>
+            <div class="logo" data-aos="fade-down">Ms Sports</div>
+            <div class="nav-link" data-aos="fade-left">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home" data-aos="zoom-in">
+        <h1>Welcome to Ms Sports</h1>
+        <p>Your one-stop shop for all sports gear.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section class="section" id="about" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p><strong> We are dedicated to providing the best sports equipment and apparel.</strong></p>
+        <p><strong> Our mission is to help you achieve your fitness goals.</strong></p>
+    </section>
+
+    <section class="section" id="products" data-aos="fade-right">
+        <p class="product-desc"><strong> Check out our latest collection of sports gear.</strong></p>
+        <div class="product-list">
+            <div class="product-item">Tennis Bats
+              <img src="bats.jpg" alt="">
+            </div>
+            <div class="product-item">Sports Jersey
+              <img src="jersey.jpg" alt="">
+            </div>
+            <div class="product-item">Sports Shoes
+              <img src="shoes.jpg" alt="">
+            </div>
+          </div>
+        
+    </section>
+
+    <section class="section" id="contact" data-aos="fade-left">
+        <h2>Contact Us</h2>
+        <p>Email: MSsportsinq@gmail.com</p>
+        <p>Phone: +123 456 7890</p>
+        
+    </section>
+
+    <footer class="footer" data-aos="fade-up">
+        <p>&copy; 2025 MsSports. All rights reserved.</p>
+        <p>Follow us on social media!</p>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
